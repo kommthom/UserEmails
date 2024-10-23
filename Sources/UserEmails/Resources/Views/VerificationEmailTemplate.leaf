@@ -1,0 +1,22 @@
+#extend("EmailMaster"):
+    #export("title"):
+        <title>#localize("verifyemail.title", "locale", locale)</title>
+    #endexport
+    #export("header2"):
+        <h2 style="text-align: left; color: rgb(34, 34, 34); font-size: 19px; font-weight: normal;">#localize("verifyemail.header2", "locale", locale)</h2>
+    #endexport
+    #export("emailbody"):
+        <br>#localize("verifyemail.body1", "locale", locale)
+        <br>#localize("verifyemail.body2", "locale", locale, "recipientName", recipientName, "recipientEmail", recipientEmail)<br>
+        <br>#localize("verifyemail.body3", "locale", locale)<br>
+        <br>
+        <span style=3D"font-weight: bold;">#localize("verifyemail.body4", "locale", locale)
+    #endexport
+    #export("emailbutton"):
+        <a target="_blank" href="#localize("verifyemail.button.url", "locale", locale, "verify_url", verify_url)" class="link2" style="color: rgb(255, 255, 255); font-size: 16px; text-decoration: none;">#localize("verifyemail.button.text", "locale", locale)</a>
+    #endexport
+    #export("emaillink"):
+        <a href="#localize("verifyemail.button.url", "locale", locale, "verify_url", verify_url)" target="_blank" style="color: rgb(56, 47, 46);">#localize("verifyemail.button.url", "locale", locale, "verify_url", verify_url)</a>
+    #endexport
+    #export("emailwarning"):<br>#endexport
+#endextend

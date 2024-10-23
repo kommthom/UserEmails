@@ -1,7 +1,7 @@
 import XCTest
-@testable import RemindersMacOS_Emails
+@testable import UserEmails
 
-final class RemindersMacOS_EmailsTests: XCTestCase {
+final class UserEmailsTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
